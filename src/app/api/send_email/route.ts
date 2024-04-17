@@ -6,7 +6,7 @@ const pass = process.env.EMAIL_PASS;
 
 const mailOptions = {
   from: email,
-  to: ["tanveerctg2014@gmail.com", "carshipperguy@gmail.com"],
+  to: ["carshipperguy@gmail.com"],
 };
 
 const transporter = nodemailer.createTransport({
