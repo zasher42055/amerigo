@@ -6,14 +6,7 @@ const pass = process.env.EMAIL_PASS;
 
 const mailOptions = {
   from: email,
-  to: [
-    "zach@amerigoautotransport.com",
-    "tanveerctg2014@gmail.com",
-    "tanveerctg2018@gmail.com",
-    "tanveerctg@instawebworks.com.au",
-    "Newquotes@amerigoautotransport.com",
-    "carshipperguy@gmail.com",
-  ],
+  to: ["tanveerctg2014@gmail.com", "carshipperguy@gmail.com"],
 };
 
 const transporter = nodemailer.createTransport({
@@ -23,6 +16,7 @@ const transporter = nodemailer.createTransport({
     pass,
   },
 });
+console.log("test");
 
 export async function POST(request: Request) {
   const res = await request.json();
