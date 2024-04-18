@@ -86,7 +86,7 @@ export default function Home() {
     }
   };
   return (
-    <div className="w-full max-w-[300px] ">
+    <div className="w-full">
       <form onSubmit={handleSubmit(onSubmit)}>
         <Step1 errors={errors} watch={watch} control={control} />
         <Step2
