@@ -49,6 +49,7 @@ export default function Home() {
     setValue,
     getValues,
     clearErrors,
+    reset,
     formState: { errors },
   } = useForm({
     mode: "onChange",
@@ -71,8 +72,7 @@ export default function Home() {
       );
       console.log(responseForAddRecordImage);
       setSuccessMsg("Submitted!");
-
-      // reset();
+      reset();
       // notify();
     } catch (err) {
       console.log(err);
