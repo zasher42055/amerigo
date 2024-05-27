@@ -71,8 +71,13 @@ export default function Home() {
         }
       );
       console.log(responseForAddRecordImage);
+
       setSuccessMsg("Submitted!");
-      reset();
+
+      setTimeout(() => {
+        window.location.assign("https://amerigoautotransport.com/thank-you/");
+        reset();
+      }, 50);
       // notify();
     } catch (err) {
       console.log(err);

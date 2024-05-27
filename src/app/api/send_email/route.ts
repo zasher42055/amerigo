@@ -659,6 +659,6 @@ export async function POST(request: Request) {
     return NextResponse.json({ message: "Mail Sent", ok: true });
   } catch (err) {
     console.log(err);
-    return NextResponse.json({ message: err }, { status: 500 });
+    return NextResponse.json({ message: err, ok: false }, { status: 500 });
   }
 }
