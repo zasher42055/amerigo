@@ -76,7 +76,7 @@ export default function Home() {
 
       setTimeout(() => {
         window.location.assign("https://amerigoautotransport.com/thank-you/");
-        reset();
+        // reset();
       }, 50);
       // notify();
     } catch (err) {
