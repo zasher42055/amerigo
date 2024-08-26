@@ -8,8 +8,8 @@ const mailOptions = {
   from: email,
   to: [
     "carshipperguy@gmail.com",
-    "Zach@amerigoautotransport.com",
-    "Fred@amerigoautotransport.com",
+    
+    
   ],
 };
 
